@@ -53,5 +53,9 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber > 1) {
+    return `Your total cost is ${total}, which will be charged to the card ${cardNumber}.`;
+  } else {
+    return "Sorry, we don't have a credit vard on file for you."
+  }
 }
